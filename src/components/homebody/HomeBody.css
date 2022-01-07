@@ -1,0 +1,36 @@
+.HomeBody {
+    margin-top: 50px;
+    background-color: #EFEDEE;
+    padding-top: 10px;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    font-family: 'Conv_Museo700-Regular';
+}
+
+.HomeBody .Body-Title {
+    font-size: 20pt;
+    color: #801064;
+}
+
+.HomeBody .Body-Card {
+    padding-top: 20px;
+}
+
+.HomeBody .card {
+    background-color: #EFEDEE;
+    width: 100%;
+    border: none;
+}
+
+.HomeBody .card .card-img-top {
+    width: 60%;
+}
+
+.HomeBody .card .card-title {
+    font-size: 20pt;
+    font-weight: bold;
+}
+
+.HomeBody .card .card-text {
+    font-size: 13pt;
+}

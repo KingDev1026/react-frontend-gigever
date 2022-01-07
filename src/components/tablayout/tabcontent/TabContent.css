@@ -1,0 +1,20 @@
+.TabContent {
+    font-family: 'Conv_Museo700-Regular';
+    padding-top: 3rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.TabContent .search-btn {
+    margin-top: 3px;
+}
+
+.TabContent .Tab-Table {
+    border: #147562 solid 1px;
+}
+
+.TabContent .Tab-Table .Table-Icon {
+    font-size: 14pt;
+    color: #801064;
+    margin-top: -5px;
+}
