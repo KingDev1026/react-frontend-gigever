@@ -1,0 +1,28 @@
+.Footer {
+    font-family: 'Arial';
+    padding: 1.5rem;
+    background-color: #016565;
+    color: white;
+}
+
+.Footer .Footer-Body {
+    display: flex;
+    align-items: center;
+}
+
+.Footer .Footer-Body ul a {
+    color: white;
+    font-style: normal;
+    text-decoration: none;
+}
+
+.Footer .Footer-Body .Footer-Urls {
+    margin-top: 10px;
+    display: flex;
+    justify-content: end;
+}
+
+.Footer .Footer-Body .Left-Text {
+    display: flex;
+    justify-content: start;
+}

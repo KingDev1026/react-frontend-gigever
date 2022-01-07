@@ -5,6 +5,7 @@ import Header from './components/header/Header';
 import Slider from './components/slider/Slider'
 import TabLayout from './components/tablayout/TabLayout';
 import HomeBody from './components/homebody/HomeBody';
+import Footer from './components/footer/Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <Slider />
       <TabLayout />
       <HomeBody />
+      <Footer />
     </div>
   );
 }
