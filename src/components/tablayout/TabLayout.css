@@ -1,0 +1,28 @@
+
+.TabLayout {
+    margin-top: -20px;
+    font-family: 'Conv_Museo700-Regular';
+}
+
+.TabLayout .nav-tabs .nav-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 14pt;
+    color: white;
+    font-weight: 900;
+    background-color: black;
+    /* border: solid 1px white; */
+    margin: 2px;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.TabLayout .nav-tabs .active {
+    background-color: white;
+    color: black;
+}
+
+.TabLayout .nav-tabs .nav-link .tab-icon {
+    margin-top: -5px;
+}

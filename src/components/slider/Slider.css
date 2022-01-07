@@ -1,0 +1,28 @@
+
+.Slider {
+    font-family: 'Conv_Museo700-Regular';
+}
+.Slider .carousel .carousel-item img {
+    height: 450px;
+}
+
+.Slider .carousel h2 {
+    color: white;
+}
+
+.Slider .carousel .carousel-caption h2 {
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-size: 26pt;
+    font-weight: 900;
+    font-variant-caps: small-caps;
+}
+
+.carousel-caption {
+    width: 100%;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
