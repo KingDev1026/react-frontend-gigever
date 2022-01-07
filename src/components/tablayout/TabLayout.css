@@ -1,7 +1,10 @@
 
 .TabLayout {
-    margin-top: -20px;
+    position: absolute;
+    top: 450px;
     font-family: 'Conv_Museo700-Regular';
+    z-index: 9;
+    width: 80%;
 }
 
 .TabLayout .nav-tabs .nav-link {
@@ -12,17 +15,29 @@
     color: white;
     font-weight: 900;
     background-color: black;
-    /* border: solid 1px white; */
-    margin: 2px;
+    border: solid 0px white;
+    margin-right: 4px;
     padding-left: 50px;
     padding-right: 50px;
 }
 
+.TabLayout .tab-content {
+    background-color: white;
+    margin-top: 1px;
+}
 .TabLayout .nav-tabs .active {
     background-color: white;
     color: black;
 }
 
+.TabLayout .nav-tabs {
+    border: none;
+}
+
 .TabLayout .nav-tabs .nav-link .tab-icon {
     margin-top: -5px;
+}
+
+.TabLayout .nav-tabs .nav-link .tab-pa{
+    background-color: white;
 }
