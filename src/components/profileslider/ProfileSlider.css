@@ -1,0 +1,19 @@
+.ProfileSlider {
+    
+}
+
+.ProfileSlider .ProfileSlider-main img {
+    width: 98%;
+    height: 450px;
+}
+
+.ProfileSlider .Slider-Main {
+    margin-top: -100px;
+}
+
+.ProfileSlider .react-multi-carousel-list ul li div img {
+    background: inherit;
+    height: 80px;
+    width: 100%;
+    padding: 5%;
+}

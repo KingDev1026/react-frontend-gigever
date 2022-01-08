@@ -1,4 +1,5 @@
-import logo from './logo.svg';
+import React from "react";
+import { useState } from "react";
 import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';  
 import Header from './components/header/Header';
@@ -6,8 +7,9 @@ import Slider from './components/slider/Slider'
 import TabLayout from './components/tablayout/TabLayout';
 import HomeBody from './components/homebody/HomeBody';
 import Footer from './components/footer/Footer';
+import ProfileSlider from "./components/profileslider/ProfileSlider";
 
-function App() {
+const Home = () => {
   return (
     <div className="App">
       <Header />
@@ -16,6 +18,31 @@ function App() {
       <HomeBody />
       <Footer />
     </div>
+  )
+}
+
+const GeResult = () => {
+  return (
+    <div className="App">
+      <Header />
+    </div>
+  )
+}
+
+const Profile = () => {
+  return (
+    <div className="App">
+      <Header />
+      <ProfileSlider />
+    </div>
+  )
+}
+
+function App() {
+  const [pageState, setPageState] = useState(1);
+  return (
+      pageState === 0 ? <Home /> :
+      (pageState === 1 ? <Profile /> : <GeResult />)
   );
 }
 
