@@ -8,6 +8,7 @@ import TabLayout from './components/tablayout/TabLayout';
 import HomeBody from './components/homebody/HomeBody';
 import Footer from './components/footer/Footer';
 import ProfileSlider from "./components/profileslider/ProfileSlider";
+import Request from "./components/request/Request";
 
 const Home = () => {
   return (
@@ -34,6 +35,7 @@ const Profile = () => {
     <div className="App">
       <Header />
       <ProfileSlider />
+      <Request />
     </div>
   )
 }

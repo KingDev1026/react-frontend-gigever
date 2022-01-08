@@ -14,7 +14,6 @@ import Avatar8 from '../../assets/img/profile/3.png';
 import Avatar9 from '../../assets/img/profile/4.png';
 import Avatar10 from '../../assets/img/profile/5.png';
 import Carousel from 'react-multi-carousel';
-
 import "react-multi-carousel/lib/styles.css";
 
 function ProfileSlider () {
