@@ -62,6 +62,7 @@ function ProfileSlider () {
                         <div className="Sm-Text">
                             WEDDING Photographer
                         </div>
+                        <div className="Line-Text"/>
                         <div className="La-Text">
                             ANNI GRAHAN
                         </div>
