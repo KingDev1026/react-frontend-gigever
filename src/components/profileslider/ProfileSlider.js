@@ -1,8 +1,7 @@
-import React from "react";
-import { useRef } from "react";
+import React, { useEffect, useRef, useState } from "react";
 import './ProfileSlider.css';
 import Banner from '../../assets/img/profile/top-background.jpg';
-// import { Carousel } from "bootstrap";
+import { Carousel as BootCarousel } from "react-bootstrap";
 import { Container, Row, Col } from "react-bootstrap";
 import Avatar1 from '../../assets/img/profile/1.png';
 import Avatar2 from '../../assets/img/profile/2.png';
@@ -15,14 +14,12 @@ import Avatar8 from '../../assets/img/profile/3.png';
 import Avatar9 from '../../assets/img/profile/4.png';
 import Avatar10 from '../../assets/img/profile/5.png';
 import Carousel from 'react-multi-carousel';
-import { CarouselRef } from "react-bootstrap/esm/Carousel";
 
 import "react-multi-carousel/lib/styles.css";
 
 function ProfileSlider () {
     const responsive = {
         superLargeDesktop: {
-          // the naming can be any, depends on you.
           breakpoint: { max: 4000, min: 3000 },
           items: 5
         },
@@ -39,6 +36,7 @@ function ProfileSlider () {
           items: 5
         }
       };
+    const [curSlide, setCurSlide] = useState(2)
     return (
         <div className="ProfileSlider">
             <div className="ProfileSlider-main">
@@ -47,7 +45,36 @@ function ProfileSlider () {
             <Container className="Slider-Main">
                 <Row>
                     <Col md={6} sm={6}>
-                        <Carousel responsive={responsive} autoPlay="true">
+                        <BootCarousel activeIndex={curSlide} controls={false} className="px-2" >
+                            <BootCarousel.Item> <img src = {Avatar1} className = "d-block w-100" alt = "First slide"/> </BootCarousel.Item>
+                            <BootCarousel.Item> <img src = {Avatar2} className="d-block w-100" alt = "First slide"/> </BootCarousel.Item>
+                            <BootCarousel.Item> <img src = {Avatar3} className="d-block w-100" alt = "First slide"/> </BootCarousel.Item>
+                            <BootCarousel.Item> <img src = {Avatar4} className="d-block w-100" alt = "First slide"/> </BootCarousel.Item>
+                            <BootCarousel.Item> <img src = {Avatar5} className="d-block w-100" alt = "First slide"/> </BootCarousel.Item>
+                            <BootCarousel.Item> <img src = {Avatar6} className="d-block w-100" alt = "First slide"/> </BootCarousel.Item>
+                            <BootCarousel.Item> <img src = {Avatar7} className="d-block w-100" alt = "First slide"/> </BootCarousel.Item>
+                            <BootCarousel.Item> <img src = {Avatar8} className="d-block w-100" alt = "First slide"/> </BootCarousel.Item>
+                            <BootCarousel.Item> <img src = {Avatar9} className="d-block w-100" alt = "First slide"/> </BootCarousel.Item>
+                            <BootCarousel.Item> <img src = {Avatar10} className="d-block w-100" alt = "First slide"/> </BootCarousel.Item>
+                        </BootCarousel>
+                    </Col>
+                    <Col md={6} sm={6} className="Title-Text">
+                        <div className="Sm-Text">
+                            WEDDING Photographer
+                        </div>
+                        <div className="La-Text">
+                            ANNI GRAHAN
+                        </div>
+                    </Col>
+                </Row>
+                <Row>
+                    <Col md={6} sm={6}>
+                        <Carousel responsive={responsive} autoPlay="true" onMove={true}
+                                beforeChange={(nextSlide, { currentSlide, onMove }) => {
+                                    let showSlide = (nextSlide + 2) % 10
+                                    setCurSlide(showSlide)
+                                }}
+                        >
                             <div><img src={Avatar1} alt="Avatar1"/></div>
                             <div><img src={Avatar2} alt="Avatar2"/></div>
                             <div><img src={Avatar3} alt="Avatar3"/></div>
@@ -60,18 +87,11 @@ function ProfileSlider () {
                             <div><img src={Avatar10} alt="Avatar10"/></div>
                         </Carousel>
                     </Col>
-                    <Col md={6} sm={6}>asdf</Col>
                 </Row>
             </Container>
         </div>
     )
 }
-// const afterChange = () => {
-//     if (carouselRef.current) {
-//         alert("Asdf")
-//         const slide = carouselRef.current.state.currentSlide;
-//         // slide is 2, 3, 4
-//         // expecting 0, 1, 2
-//     }
-// };
+
+
 export default ProfileSlider;

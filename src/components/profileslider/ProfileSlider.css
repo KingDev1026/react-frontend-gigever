@@ -1,14 +1,19 @@
 .ProfileSlider {
     
 }
-
+.ProfileSlider .Slider-Main .Title-Text {
+    color: white;
+}
 .ProfileSlider .ProfileSlider-main img {
     width: 98%;
-    height: 450px;
+    height: 600px;
+}
+.ProfileSlider .carousel .carousel-item img {
+    height: 350px;
 }
 
 .ProfileSlider .Slider-Main {
-    margin-top: -100px;
+    margin-top: -450px;
 }
 
 .ProfileSlider .react-multi-carousel-list ul li div img {
@@ -16,4 +21,8 @@
     height: 80px;
     width: 100%;
     padding: 5%;
+}
+
+.ProfileSlider .carousel-indicators {
+    display: none;
 }
