@@ -11,6 +11,8 @@ import ProfileSlider from "./components/profileslider/ProfileSlider";
 import Request from "./components/request/Request";
 import ProDescription from "./components/prodescription/ProDescription";
 import ProBewer from "./components/probewer/ProBewer";
+import ResultSearch from "./components/resultsearch/ResultSearch";
+import ResultBody from "./components/resultbody/ResultBody";
 
 const Home = () => {
   return (
@@ -28,6 +30,8 @@ const GeResult = () => {
   return (
     <div className="App">
       <Header />
+      <ResultSearch />
+      <ResultBody />
     </div>
   )
 }

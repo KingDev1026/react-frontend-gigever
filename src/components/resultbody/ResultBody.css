@@ -1,0 +1,66 @@
+.ResultBody {
+    margin-top: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #efeeee;
+}
+.ResultBody .Search {
+    margin-top: 30px;
+}
+.ResultBody .Search .Search-Title .Search-Icon {
+    color: #12866e;
+    font-size: 25pt;
+    margin-left: 10px;
+}
+.ResultBody .Search .Search-Title {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    background-color: white;
+    padding: 5px;
+}
+.ResultBody .Search .Search-Title .Search-Title1 {
+    font-weight: bold;
+    font-size: 12pt;
+    margin-left: 20px;
+}
+.ResultBody .Search .Bewertung {
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-top: 10px;
+    background-color: white;
+}
+.ResultBody .Bewertung .Bewertung-Title{
+    font-size: 12pt;
+    font-weight: bold;
+    display: flex;
+    justify-content: left;
+}
+.ResultBody .Bewertung .RatingStar .Star-Title {
+    font-size: 11pt;
+}
+.ResultBody .Bewertung .RatingStar .RatingRow{
+    display: flex;
+    align-items: center;
+}
+.ResultBody .Search .Geschiecht {
+    background-color: white;
+    margin-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+.ResultBody .Search .Geschiecht .Geschiecht-Title {
+    font-weight: bold;
+    display: flex;
+    justify-content: start;
+}
+.ResultBody .Search .Geschiecht .Geschiecht-Button{
+    display: flex;
+    justify-content: left;
+}
+.ResultBody .Search .Geschiecht .Geschiecht-Button .Every-Button {
+    margin: 2px;
+}
+.ResultBody .Search .Geschiecht .Geschiecht-Button .Every-Button:focus{
+    background-color: green;
+}
