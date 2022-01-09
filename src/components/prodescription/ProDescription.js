@@ -33,43 +33,43 @@ function ProDescription() {
                 </div>
                 <div className="Des-Main">
                     <Row className="mt-5">
-                        <Col md={4} sm={12}>
+                        <Col lg={4} sm={12} className="Padding-Image">
                             <div className="Des-Image">
                                 <img src={Image1} alt="banner"/>
                             </div>
                         </Col>
-                        <Col md={4} sm={12}>
+                        <Col lg={4} sm={12} className="Padding-Text">
                             <DesText />
                         </Col>
-                        <Col md={4} sm={12}>
+                        <Col lg={4} sm={12} className="Padding-Image">
                             <div className="Des-Image">
                                 <img src={Image2} alt="banner"/>
                             </div>
                         </Col>
                     </Row>
                     <Row>
-                        <Col md={4} sm={12}>
+                        <Col lg={4} sm={12} className="Padding-Text">
                             <DesText />
                         </Col>
-                        <Col md={4} sm={12}>
+                        <Col lg={4} sm={12} className="Padding-Image">
                             <div className="Des-Image">
                                 <img src={Image3} alt="banner"/>
                             </div>
                         </Col>
-                        <Col md={4} sm={12}>
+                        <Col lg={4} sm={12} className="Padding-Text">
                             <DesText />
                         </Col>
                     </Row>
-                    <Row className="pt-5">
-                        <Col md={4} sm={12}>
-                            <div className="Des-Image">
+                    <Row>
+                        <Col lg={4} sm={12} className="Padding-Image">
+                            <div className="Des-Image" >
                                 <img src={Image4} alt="banner"/>
                             </div>
                         </Col>
-                        <Col md={4} sm={12}>
+                        <Col lg={4} sm={12} className="Padding-Text">
                             <DesText />
                         </Col>
-                        <Col md={4} sm={12}>
+                        <Col lg={4} sm={12} className="Padding-Image">
                             <div className="Des-Image">
                                 <img src={Image5} alt="banner"/>
                             </div>

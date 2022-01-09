@@ -40,16 +40,17 @@ const Profile = () => {
       <Request />
       <ProDescription />
       <ProBewer />
+      <Footer />
     </div>
   )
 }
 
 function App() {
-  const [pageState, setPageState] = useState(1);
+  const [pageState, setPageState] = useState(2);
   return (
       pageState === 0 ? <Home /> :
       (pageState === 1 ? <Profile /> : <GeResult />)
-  );
+  )
 }
 
 export default App;

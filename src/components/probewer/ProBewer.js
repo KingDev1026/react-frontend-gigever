@@ -1,6 +1,6 @@
 import React, { Component, useState } from "react";
 import './ProBewer.css';
-import { Container, Row, Col, ProgressBar, Panel, PanelGroup } from "react-bootstrap";
+import { Container, Row, Col, ProgressBar, Accordion } from "react-bootstrap";
 import {BsFillStarFill} from "react-icons/bs";
 import Rating from 'react-simple-star-rating';
 import ReactStars from 'react-stars';
@@ -64,7 +64,7 @@ function ProBewer() {
         <div className="ProBewer">
             <Container>
                 <Row>
-                    <Col md={5} sm={12} className="Bewertungen">
+                    <Col lg={5} sm={12} className="Bewertungen">
                         <div className="title">
                             <BsFillStarFill className="title-icon" />
                             <div className="title-text">
@@ -103,26 +103,93 @@ function ProBewer() {
                             <Evalue title="Wedding" value={1} />
                         </div>
                     </Col>
-                    <Col md={7} sm={12} className="Musical">
-                        {/* <PanelGroup
-                            accordion
-                            id="accordion-controlled-example"
-                            // activeKey={this.state.activeKey}
-                            // onSelect={this.handleSelect}
-                        >
-                            <Panel eventKey="1">
-                            <Panel.Heading>
-                                <Panel.Title toggle>Panel heading 1</Panel.Title>
-                            </Panel.Heading>
-                            <Panel.Body collapsible>Panel content 1</Panel.Body>
-                            </Panel>
-                            <Panel eventKey="2">
-                            <Panel.Heading>
-                                <Panel.Title toggle>Panel heading 2</Panel.Title>
-                            </Panel.Heading>
-                            <Panel.Body collapsible>Panel content 2</Panel.Body>
-                            </Panel>
-                        </PanelGroup> */}
+                    <Col lg={7} sm={12} className="Musical">
+                        <Accordion>
+                            <Accordion.Item eventKey="0">
+                                <Accordion.Header>Genres of music</Accordion.Header>
+                                <Accordion.Body>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                est laborum.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="1">
+                                <Accordion.Header>Musical Instruments</Accordion.Header>
+                                <Accordion.Body>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                est laborum.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="2">
+                                <Accordion.Header>Repertoire</Accordion.Header>
+                                <Accordion.Body>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                est laborum.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="3">
+                                <Accordion.Header>References / Awards</Accordion.Header>
+                                <Accordion.Body>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                est laborum.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="4">
+                                <Accordion.Header>Technology / Equipment</Accordion.Header>
+                                <Accordion.Body>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                est laborum.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="5">
+                                <Accordion.Header>Languages, Special Features, iscellaneous</Accordion.Header>
+                                <Accordion.Body>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                est laborum.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                            <Accordion.Item eventKey="6">
+                                <Accordion.Header>Accordion Item #1</Accordion.Header>
+                                <Accordion.Body>
+                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+                                tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+                                veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
+                                velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat
+                                cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                est laborum.
+                                </Accordion.Body>
+                            </Accordion.Item>
+                        </Accordion>
                     </Col>
                 </Row>
             </Container>

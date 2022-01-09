@@ -44,7 +44,7 @@ function ProfileSlider () {
             <Container className="Slider-Main">
                 <Row>
                     <Col md={6} sm={6}>
-                        <BootCarousel activeIndex={curSlide} controls={false} className="px-2" >
+                        <BootCarousel activeIndex={curSlide} controls={false} >
                             <BootCarousel.Item> <img src = {Avatar1} className = "d-block w-100" alt = "First slide"/> </BootCarousel.Item>
                             <BootCarousel.Item> <img src = {Avatar2} className="d-block w-100" alt = "First slide"/> </BootCarousel.Item>
                             <BootCarousel.Item> <img src = {Avatar3} className="d-block w-100" alt = "First slide"/> </BootCarousel.Item>

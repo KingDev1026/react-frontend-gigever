@@ -1,14 +1,18 @@
 import React from "react";
 import './Request.css';
 import { Container, Row, Col, Button } from "react-bootstrap";
-import Photo from '../../assets/img/profile/photo.jpg';
+import Photo from '../../assets/img/profile/avata.png';
+import LeftImg from '../../assets/img/profile/left.jpg';
 
 function Request () {
     return (
         <div className="Request">
+            <div className="Left-Image">
+                <img src={LeftImg} alt="banner"/>
+            </div>
             <Container>
                 <Row>
-                    <Col md={6} sm={12} className="Request-Text">
+                    <Col lg={6} sm={12} className="Request-Text">
                         <div className="Request-Name">
                             ANNI GRAHAN
                         </div>
@@ -27,7 +31,7 @@ function Request () {
                             and how she wows her clients with her epic iimages.
                         </div>
                     </Col>
-                    <Col md={6} sm={12}>
+                    <Col lg={6} sm={12}>
                         <div className="Request-Image">
                             <img src={Photo} alt="banner"/>
                         </div>
