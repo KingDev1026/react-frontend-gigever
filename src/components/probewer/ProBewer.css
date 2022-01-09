@@ -31,23 +31,74 @@
 .ProBewer .Bewertungen .Stars {
     margin-left: 20px;
     margin-top: 10px;
+    border-bottom: #efeeee solid 2px;
 }
-.ProBewer .Bewertungen .Stars .RatingStar .contain{
+.contain{
     width: 100%;
     display: flex;
     align-items: center;
 }
-.ProBewer .Bewertungen .Stars .RatingStar .contain .Star-Title{
+.Star-Title{
     font-weight: bold;
     display: flex;
     justify-content: start;
     font-size: 13pt;
 }
-.ProBewer .Bewertungen .Stars .RatingStar .contain .Star-Mark{
+.Star-Mark{
     display: flex;
     justify-content: start;
 }
-.ProBewer .Bewertungen .Stars .RatingStar .contain .Rating-Value{
+.Rating-Value{
     display: flex;
     justify-content: start;
+}
+.ProBewer .Bewertungen .Overall-Star {
+    margin-left: 20px;
+    margin-top: -5px;
+}
+.ProBewer .Bewertungen .Overall {
+    margin-top: 10px;
+    text-align: start;
+    margin-left: 13px;
+}
+.ProBewer .Bewertungen .Overall .Overall-Title {
+    font-size: 13pt;
+    font-weight: bold;
+}
+.progress-bar {
+    background-color: #760058;
+}
+
+.Progress {
+    font-size: 14pt;
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+.Progress .Pro-Main {
+    margin-top: 5px;
+}
+.Evalue-Div {
+    margin-top: 10px;
+}
+.Evalue-Title {
+    text-align: left;
+    font-size: 15pt;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #12866e;
+}
+.Evalue-Value {
+    text-align: left;
+    font-size: 14pt;
+}
+.Evaluations {
+    margin-left: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.Evaluations-Title {
+    text-align: left;
+    font-weight: bold;
+    font-size: 15pt;
 }
