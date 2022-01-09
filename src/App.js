@@ -9,6 +9,7 @@ import HomeBody from './components/homebody/HomeBody';
 import Footer from './components/footer/Footer';
 import ProfileSlider from "./components/profileslider/ProfileSlider";
 import Request from "./components/request/Request";
+import ProDescription from "./components/prodescription/ProDescription";
 
 const Home = () => {
   return (
@@ -36,6 +37,7 @@ const Profile = () => {
       <Header />
       <ProfileSlider />
       <Request />
+      <ProDescription />
     </div>
   )
 }
