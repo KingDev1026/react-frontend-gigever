@@ -1,0 +1,53 @@
+.ProBewer {
+    margin-top: 50px;
+}
+.ProBewer .Bewertungen {
+    border:#efeeee solid 6px;
+}
+.ProBewer .title {
+    display: flex;
+    color: #12866e;
+    border-bottom: #efeeee solid 2px;
+}
+.ProBewer .title .title-icon {
+    margin-top: 10px;
+    font-size: 30pt;
+}
+.ProBewer .title .title-text {
+    padding-left: 20px;
+    text-align: left;
+}
+.ProBewer .title .title-text h5{
+    font-size: 20pt;
+}
+.ProBewer .title .title-text h6{
+    font-size: 13pt;
+}
+.ProBewer .Bewertungen .Stars-Title {
+    font-weight: bold;
+    text-align: left;
+    font-size: 13pt;
+}
+.ProBewer .Bewertungen .Stars {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+.ProBewer .Bewertungen .Stars .RatingStar .contain{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.ProBewer .Bewertungen .Stars .RatingStar .contain .Star-Title{
+    font-weight: bold;
+    display: flex;
+    justify-content: start;
+    font-size: 13pt;
+}
+.ProBewer .Bewertungen .Stars .RatingStar .contain .Star-Mark{
+    display: flex;
+    justify-content: start;
+}
+.ProBewer .Bewertungen .Stars .RatingStar .contain .Rating-Value{
+    display: flex;
+    justify-content: start;
+}

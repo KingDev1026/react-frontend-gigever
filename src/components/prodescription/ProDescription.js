@@ -1,6 +1,6 @@
 import React from "react";
 import './ProDescription.css';
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 import Image1 from '../../assets/img/profile/1.png';
 import Image2 from '../../assets/img/profile/2.png';
 import Image3 from '../../assets/img/profile/3.png';
@@ -63,7 +63,7 @@ function ProDescription() {
                     <Row className="pt-5">
                         <Col md={4} sm={12}>
                             <div className="Des-Image">
-                                <img src={Image1} alt="banner"/>
+                                <img src={Image4} alt="banner"/>
                             </div>
                         </Col>
                         <Col md={4} sm={12}>
@@ -71,7 +71,7 @@ function ProDescription() {
                         </Col>
                         <Col md={4} sm={12}>
                             <div className="Des-Image">
-                                <img src={Image2} alt="banner"/>
+                                <img src={Image5} alt="banner"/>
                             </div>
                         </Col>
                     </Row>
