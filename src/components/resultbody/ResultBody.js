@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import './ResultBody.css';
-import { Container, Row, Col, Button, ButtonGroup, Card } from "react-bootstrap";
+import { Container, Row, Col, Button, ButtonGroup, Carousel } from "react-bootstrap";
 import { BsFunnelFill } from "react-icons/bs";
 import ReactStars from 'react-stars';
 import { Slider, Rail, Handles, Tracks } from 'react-compound-slider'
+import FirstImage from "../../assets/img/listing_musicians.jpg"
+import SecondImage from "../../assets/img/music_service.jpg"
 
 const sliderStyle = {  // Give the slider some width
     position: 'relative',
@@ -130,23 +132,6 @@ const CustomCheck = (props) => {
       </div>
     )
 }
-const CustomCard = (props) => {
-    return (
-        <div className="CustomCard">
-            <Card style={{ width: '18rem' }}>
-                <Card.Img variant="top" src="holder.js/100px180" />
-                <Card.Body>
-                    <Card.Title>Card Title</Card.Title>
-                    <Card.Text>
-                    Some quick example text to build on the card title and make up the bulk of
-                    the card's content.
-                    </Card.Text>
-                    <Button variant="primary">Go somewhere</Button>
-                </Card.Body>
-            </Card>
-        </div>
-    )
-}
 const RatingStar = (props) => {
     const [rate, setRate] = useState(5)
     return (
@@ -160,7 +145,7 @@ const RatingStar = (props) => {
                         count={5}
                         // onChange={ratingChanged}
                         value={props.value}
-                        size={35}
+                        size={props.size}
                         color2={'#ffd700'} 
                     />
                 </Col>
@@ -168,6 +153,82 @@ const RatingStar = (props) => {
         </div>
     )
 }
+const CustomCard = (props) => {
+    return (
+        <div className="CustomCard">
+            <Carousel controls={true}>
+                <Carousel.Item>
+                    <img
+                        className = "d-block w-100"
+                        src = {FirstImage}
+                        alt = "First slide"
+                    />
+                    <Carousel.Caption className="Cap-Text">
+                        <div className="FirstName">
+                            {props.firstName}
+                        </div>
+                        <div className="Age">
+                            {props.age + "years , " + props.distance + "km"}
+                        </div>
+                    </Carousel.Caption>
+                </Carousel.Item>
+                <Carousel.Item>
+                    <img
+                        className = "d-block w-100"
+                        src = {SecondImage}
+                        alt = "Second slide"
+                    />
+
+                    <Carousel.Caption className="Cap-Text">
+                        <div className="FirstName">
+                            {props.firstName}
+                        </div>
+                        <div className="Age">
+                            {props.age + " , " + props.distance + "km"}
+                        </div>
+                    </Carousel.Caption>
+                </Carousel.Item>
+            </Carousel>
+            <div className="Job-Rating">
+                <div className="Description">
+                    Mobile DJ <br/>
+                    Wedding DJ
+                </div>
+                <div className="Re-Rating">
+                    <div className="Ra-Text">{ props.rating }</div>
+                    <RatingStar title="" value={ props.rating } size={20}/>
+                </div>
+            </div>
+            <div className="word">
+                <div className="word-element">
+                    Independent
+                </div>
+                <div className="word-element">
+                    All-Round
+                </div>
+                <div className="word-element">
+                    Charts
+                </div>
+                <div className="word-element">
+                    Classic Rock
+                </div>
+                <div className="word-element">
+                    Disco
+                </div>
+            </div>
+            <div className="introduction">
+                {props.introduction}
+            </div>
+            <div className="price-more">
+                <div className="price">
+                    {props.priceUnit + " " + props.price}
+                </div>
+                <Button className="more" variant="primary">more</Button>
+            </div>
+        </div>
+    )
+}
+
 function ResultBody () {
     return(
         <div className="ResultBody">
@@ -184,7 +245,7 @@ function ResultBody () {
                             <div className="Bewertung-Title Title-Class">
                                 Bewertung
                             </div>
-                            <RatingStar title="mind." value={0} />
+                            <RatingStar title="mind." value={0} size={35} />
                         </div>
                         <div className="Geschiecht">
                             <div className="Geschiecht-Title Title-Class">
@@ -218,10 +279,121 @@ function ResultBody () {
                             <CustomCheck title="House"/>
                         </div>
                     </Col>
-                    <Col lg={9} sm={12}>
+                    <Col lg={9} sm={12} className="Card-Box">
                         <Row>
                             <Col lg={4} sm={6}>
-                                <CustomCard />
+                                <CustomCard 
+                                    firstName="Christian" 
+                                    age={12} 
+                                    distance={11} 
+                                    rating={5} 
+                                    introduction="Happy guests are roses for old age. Celebrate with us."
+                                    price={760}
+                                    priceUnit="$"
+                                />
+                            </Col>
+                            <Col lg={4} sm={6}>
+                                <CustomCard 
+                                    firstName="Christian" 
+                                    age={12} 
+                                    distance={11} 
+                                    rating={5} 
+                                    introduction="Happy guests are roses for old age. Celebrate with us."
+                                    price={760}
+                                    priceUnit="$"
+                                />
+                            </Col><Col lg={4} sm={6}>
+                                <CustomCard 
+                                    firstName="Christian" 
+                                    age={12} 
+                                    distance={11} 
+                                    rating={5} 
+                                    introduction="Happy guests are roses for old age. Celebrate with us."
+                                    price={760}
+                                    priceUnit="$"
+                                />
+                            </Col><Col lg={4} sm={6}>
+                                <CustomCard 
+                                    firstName="Christian" 
+                                    age={12} 
+                                    distance={11} 
+                                    rating={5} 
+                                    introduction="Happy guests are roses for old age. Celebrate with us."
+                                    price={760}
+                                    priceUnit="$"
+                                />
+                            </Col><Col lg={4} sm={6}>
+                                <CustomCard 
+                                    firstName="Christian" 
+                                    age={12} 
+                                    distance={11} 
+                                    rating={5} 
+                                    introduction="Happy guests are roses for old age. Celebrate with us."
+                                    price={760}
+                                    priceUnit="$"
+                                />
+                            </Col><Col lg={4} sm={6}>
+                                <CustomCard 
+                                    firstName="Christian" 
+                                    age={12} 
+                                    distance={11} 
+                                    rating={5} 
+                                    introduction="Happy guests are roses for old age. Celebrate with us."
+                                    price={760}
+                                    priceUnit="$"
+                                />
+                            </Col><Col lg={4} sm={6}>
+                                <CustomCard 
+                                    firstName="Christian" 
+                                    age={12} 
+                                    distance={11} 
+                                    rating={5} 
+                                    introduction="Happy guests are roses for old age. Celebrate with us."
+                                    price={760}
+                                    priceUnit="$"
+                                />
+                            </Col>
+                            <Col lg={4} sm={6}>
+                                <CustomCard 
+                                    firstName="Christian" 
+                                    age={12} 
+                                    distance={11} 
+                                    rating={5} 
+                                    introduction="Happy guests are roses for old age. Celebrate with us."
+                                    price={760}
+                                    priceUnit="$"
+                                />
+                            </Col>
+                            <Col lg={4} sm={6}>
+                                <CustomCard 
+                                    firstName="Christian" 
+                                    age={12} 
+                                    distance={11} 
+                                    rating={5} 
+                                    introduction="Happy guests are roses for old age. Celebrate with us."
+                                    price={760}
+                                    priceUnit="$"
+                                />
+                            </Col><Col lg={4} sm={6}>
+                                <CustomCard 
+                                    firstName="Christian" 
+                                    age={12} 
+                                    distance={11} 
+                                    rating={5} 
+                                    introduction="Happy guests are roses for old age. Celebrate with us."
+                                    price={760}
+                                    priceUnit="$"
+                                />
+                            </Col><Col lg={4} sm={6}>
+                                <CustomCard 
+                                    firstName="Christian" 
+                                    age={12} 
+                                    distance={11} 
+                                    rating={5} 
+                                    introduction="Happy guests are roses for old age. Celebrate with us."
+                                    price={760}
+                                    priceUnit="$"
+                                />
                             </Col>
                         </Row>
                     </Col>

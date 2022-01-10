@@ -32,6 +32,7 @@ const GeResult = () => {
       <Header />
       <ResultSearch />
       <ResultBody />
+      <Footer />
     </div>
   )
 }

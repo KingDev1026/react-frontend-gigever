@@ -2,6 +2,7 @@
     margin-top: 10px;
     font-family: Arial, Helvetica, sans-serif;
     background-color: #efeeee;
+    padding-bottom: 30px;
 }
 .ResultBody .Search {
     margin-top: 30px;
@@ -90,6 +91,7 @@
     margin-top: 5px;
     padding-left: 20px;
     text-align: left;
+    padding-bottom: 30px;
 }
 /* .ResultBody .Search .Musik-Rich .Musik-Title {
     margin-left: 20px;
@@ -107,4 +109,97 @@
     font-size: 12pt;
     margin-left: 20px;
     margin-top: 5px;
+}
+
+.ResultBody .Card-Box .CustomCard {
+    background-color: white;
+    margin-top: 30px;
+    padding-bottom: 20px;
+    border: #f5a623 solid 2px;
+}
+.ResultBody .Card-Box .CustomCard .carousel .carousel-item img{
+    height: 120px;
+}
+.ResultBody .Card-Box .CustomCard .carousel .Cap-Text{
+    display: flex;
+    align-items: flex-end;
+    margin-top: 20px;
+}
+.ResultBody .Card-Box .CustomCard .carousel .Cap-Text .FirstName {
+    font-size: 13pt;
+    font-weight: bold;
+    position: absolute;
+    top: 50px;
+    left: 20px;
+}
+.ResultBody .Card-Box .CustomCard .carousel .Cap-Text .Age {
+    font-size: 10pt;
+    position: absolute;
+    top: 70px;
+    left: 20px;
+}
+.ResultBody .Card-Box .CustomCard .Job-Rating {
+    margin-left: 20px;
+    margin-top: 10px;
+    display: flex;
+    width: 100%;
+}
+.ResultBody .Card-Box .CustomCard .Job-Rating .Description {
+    font-size: 10pt;
+    text-align: left;
+}
+.ResultBody .Card-Box .CustomCard .Job-Rating .Re-Rating {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.ResultBody .Card-Box .CustomCard .Job-Rating .Re-Rating .Ra-Text {
+    margin-left: 30px;
+    font-size: 10pt;
+}
+.ResultBody .Card-Box .CustomCard .Job-Rating .Re-Rating .Star-Mark {
+    padding:0px;
+    margin-left: 20px;
+}
+.carousel-indicators {
+    display: none;
+}
+.ResultBody .Card-Box .CustomCard .word {
+    text-align: left;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0px;
+    margin-left: 10px;
+}
+.ResultBody .Card-Box .CustomCard .word .word-element {
+    display: inline;
+    margin-left: 5px;
+    background-color: #770159;
+    font-size: 10pt;
+    border-radius: 10%;
+    padding: 3px;
+    margin-top: 2px;
+    color: white;
+}
+.ResultBody .Card-Box .CustomCard .introduction {
+    margin-left: 15px;
+    margin-top: 10px;
+    text-align: left;
+    font-size: 11pt;
+    font-style: italic;
+}
+.ResultBody .Card-Box .CustomCard .price-more {
+    display: flex;
+    margin-left: 20px;
+    align-items: center;
+}
+.ResultBody .Card-Box .CustomCard .price-more .price{
+    font-size: 15pt;
+    font-weight: 900;
+}
+.ResultBody .Card-Box .CustomCard .price-more .more{
+    padding: 0px, 10px;
+    display: flex;
+    margin-left: 30%;
 }
