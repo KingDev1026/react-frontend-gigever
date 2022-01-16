@@ -2,6 +2,7 @@ import React from "react";
 import './Header.css';
 import { Container, Nav, Navbar, Form } from "react-bootstrap";
 import Logo from '../../assets/img/logo.png';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
@@ -13,15 +14,17 @@ function Header() {
                     <Navbar.Collapse id="responsive-navbar-nav">
                         <Nav className="ms-auto d-flex align-items-center">
                             <Form.Select className='lang-select' aria-label="Default select example">
-                                <option value="fr">French</option>
                                 <option value="en">English</option>
+                                <option value="fr">French</option>
                                 <option value="de">German</option>
                                 <option value="it">Italian</option>
                                 <option value="pt">Portuguese</option>
                                 <option value="ru">Russian</option>
                                 <option value="es">Spanish</option>
                             </Form.Select>
-                            <Nav.Link className='n-link en-link' href="">Log In</Nav.Link>
+
+                            <Link to="/login" className='n-link en-link nav-link'>Log In</Link>
+                            {/* <Nav.Link className='n-link en-link' href="">Log In</Nav.Link> */}
                             <Nav.Link className='n-link re-link' href="">Register</Nav.Link>
                         </Nav>
                     </Navbar.Collapse>

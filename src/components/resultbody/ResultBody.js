@@ -6,6 +6,7 @@ import ReactStars from 'react-stars';
 import { Slider, Rail, Handles, Tracks } from 'react-compound-slider'
 import FirstImage from "../../assets/img/listing_musicians.jpg"
 import SecondImage from "../../assets/img/music_service.jpg"
+import { Link } from 'react-router-dom';
 
 const sliderStyle = {  // Give the slider some width
     position: 'relative',
@@ -147,6 +148,8 @@ const RatingStar = (props) => {
                         value={props.value}
                         size={props.size}
                         color2={'#ffd700'} 
+                        // editing={false} 
+                        edit={false}
                     />
                 </Col>
             </Row>
@@ -223,7 +226,8 @@ const CustomCard = (props) => {
                 <div className="price">
                     {props.priceUnit + " " + props.price}
                 </div>
-                <Button className="more" variant="primary">more</Button>
+                {/* <Button className="more" variant="primary">more</Button> */}
+                <Link to="/profile" className='more n-link en-link nav-link'>more</Link>
             </div>
         </div>
     )

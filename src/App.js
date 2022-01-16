@@ -13,7 +13,25 @@ import ProDescription from "./components/prodescription/ProDescription";
 import ProBewer from "./components/probewer/ProBewer";
 import ResultSearch from "./components/resultsearch/ResultSearch";
 import ResultBody from "./components/resultbody/ResultBody";
+import {Translator, Translate} from 'react-auto-translate';
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+
+
+ // example procider
+ const cacheProvider = {
+  get: (language, key) =>
+    ((JSON.parse(localStorage.getItem('translations')) || {})[key] || {})[
+      language
+    ],
+  set: (language, key, value) => {
+    const existing = JSON.parse(localStorage.getItem('translations')) || {
+      [key]: {},
+    };
+    existing[key] = {...existing[key], [language]: value};
+    localStorage.setItem('translations', JSON.stringify(existing));
+  },
+ };
 const Home = () => {
   return (
     <div className="App">
@@ -30,7 +48,6 @@ const GeResult = () => {
   return (
     <div className="App">
       <Header />
-      <ResultSearch />
       <ResultBody />
       <Footer />
     </div>
@@ -51,11 +68,31 @@ const Profile = () => {
 }
 
 function App() {
-  const [pageState, setPageState] = useState(2);
+  const [pageState, setPageState] = useState(0);
   return (
-      pageState === 0 ? <Home /> :
-      (pageState === 1 ? <Profile /> : <GeResult />)
+      <BrowserRouter>
+        <Routes>
+            <Route index element={<Home/>} />
+            <Route path='login' element={<GeResult/>}/>
+            <Route path='profile' element={<Profile />}/>
+       </Routes>
+      </BrowserRouter>
   )
 }
+
+// function App() {
+//   const [pageState, setPageState] = useState(0);
+//   return (
+//       <BrowserRouter>
+//         <Routes>
+//           {
+//             pageState === 0 ? <Home /> :
+//               (pageState === 1 ? <Profile /> : <GeResult />)
+//           }
+//        </Routes>
+//       </BrowserRouter>
+//   )
+// }
+
 
 export default App;

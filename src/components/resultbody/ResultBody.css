@@ -196,7 +196,9 @@
     font-weight: 900;
 }
 .ResultBody .Card-Box .CustomCard .price-more .more{
-    padding: 0px, 10px;
     display: flex;
     margin-left: 30%;
+    background-color: #eb1c26;
+    color: white;
+    font-weight: bold;
 }

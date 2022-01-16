@@ -10,6 +10,7 @@
     "multi-range-slider-react": "^1.0.7",
     "rc-time-picker": "^3.7.3",
     "react": "^17.0.2",
+    "react-auto-translate": "0.0.6",
     "react-autocomplete": "^1.8.1",
     "react-bootstrap": "^2.1.0",
     "react-bootstrap-date-picker": "^5.1.0",
@@ -20,6 +21,7 @@
     "react-dom": "^17.0.2",
     "react-dropdown": "^1.9.2",
     "react-icons": "^4.3.1",
+    "react-intl": "^5.24.2",
     "react-multi-carousel": "^2.6.5",
     "react-scripts": "5.0.0",
     "react-simple-star-rating": "^4.0.5",
@@ -51,5 +53,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-router-dom": "^6.2.1"
   }
 }

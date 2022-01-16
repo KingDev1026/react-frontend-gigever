@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e277d52a.css",
+    "main.js": "/static/js/main.39fddabe.js",
+    "static/js/787.1513fb98.chunk.js": "/static/js/787.1513fb98.chunk.js",
+    "static/media/music_service.jpg": "/static/media/music_service.f99c66f738b2596c47cb.jpg",
+    "static/media/avata.png": "/static/media/avata.32008f89ebfa51c222b6.png",
+    "static/media/listing_musicians.jpg": "/static/media/listing_musicians.a27b1cea9a4ffe391f5c.jpg",
+    "static/media/1.png": "/static/media/1.89bd41b551bbbaad7280.png",
+    "static/media/4.png": "/static/media/4.790f2a8d265ae1610fee.png",
+    "static/media/3.png": "/static/media/3.7107cd478b46053c298c.png",
+    "static/media/5.png": "/static/media/5.958872ed7169cc2ed408.png",
+    "static/media/2.png": "/static/media/2.73464034998f569a1e19.png",
+    "static/media/top-background.jpg": "/static/media/top-background.aa4fab22eb2dc77eeacb.jpg",
+    "static/media/card2.jpg": "/static/media/card2.c83abec9077ad7786cf7.jpg",
+    "static/media/card3.jpg": "/static/media/card3.baa2a7448f1b63c9b52b.jpg",
+    "static/media/card1.jpg": "/static/media/card1.276b51cb8ae70160204c.jpg",
+    "static/media/logo.png": "/static/media/logo.dc459b12c44dfdb9ce10.png",
+    "static/media/left.jpg": "/static/media/left.182d5895e9a8611a49d8.jpg",
+    "static/media/revicons.eot": "/static/media/revicons.a77de540a38981833f9e.eot",
+    "static/media/revicons.ttf": "/static/media/revicons.57fd05d4ae650374c8de.ttf",
+    "static/media/revicons.woff": "/static/media/revicons.e8746a624ed098489406.woff",
+    "index.html": "/index.html",
+    "main.e277d52a.css.map": "/static/css/main.e277d52a.css.map",
+    "main.39fddabe.js.map": "/static/js/main.39fddabe.js.map",
+    "787.1513fb98.chunk.js.map": "/static/js/787.1513fb98.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e277d52a.css",
+    "static/js/main.39fddabe.js"
+  ]
+}
