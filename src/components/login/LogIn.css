@@ -1,6 +1,39 @@
 .LogIn {
-    font-family: 'Conv_Museo700-Regular';
+    font-family: 'Inter', sans-serif;
     background-color: white;
-    /* padding-top: 5px; */
+    padding: 50px;
+}
+.LogIn form {
+    padding: 50px;
+    border: #dfdfdf solid 2px;
+    border-top: 0;
+}
+.LogIn .Form-Title {
+    font-size: 30pt;
+    background-color: #f7f7f7;
+    border: #dfdfdf solid 2px;
+    color: #c23030;
+}
+.LogIn .text-label {
+    color: black;
+    font-weight: bold;
+    text-align: right;
+    margin-top: 5px;
+}
+.LogIn .form-div {
+    padding-top: 20px;
+}
+.LogIn .check-label {
+    text-align: left;
+    font-size: 13pt;
+}
+.LogIn .login-button {
     padding-left: 20px;
+    padding-right: 20px;
+    background-color: #ff4c3b;
+    border: none;
+}
+.LogIn .invalid {
+    color: red;
+    text-align: center;    
 }

@@ -70,6 +70,7 @@ const Login = () => {
     <div className="App">
         <Header />
         <LogIn />
+        <Footer />
     </div>
   )
 }

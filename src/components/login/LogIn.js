@@ -1,20 +1,59 @@
-import React from "react";
+import React, { useState, useRef } from "react";
 import './LogIn.css';
-import { Container, ListGroup, Form } from "react-bootstrap";
+import { Container, Form, Button, Row, Col } from "react-bootstrap";
 
 function LogIn () {
+    const [userType, setUserType] = useState("User")
+    const [email, setEmail] = useState("")
+    const [password, setPassword] = useState("")
+    
+    const loginHandler = () => {
+        
+    }
     return (
         <div className="LogIn">
-            <Panel>
-                <Panel.Heading>Panel heading</Panel.Heading>
-                <Panel.Body>Some default panel content here.</Panel.Body>
-                <ListGroup>
-                    <ListGroupItem>Item 1</ListGroupItem>
-                    <ListGroupItem>Item 2</ListGroupItem>
-                    <ListGroupItem>&hellip;</ListGroupItem>
-                </ListGroup>
-                <Panel.Body>Some more panel content here.</Panel.Body>
-            </Panel>
+            <Container>
+                <Row>
+                    <Col md={1}/>
+                    <Col md={10}>
+                    <div className="Form-Title">{ userType } Log In</div>
+                        <Form>
+                            <Form.Group className="mb-3 row align-items-center form-div" controlId="formBasicEmail">
+                                <div className="col-md-3 text-label">
+                                    <Form.Label>{ userType } E-Mail-Address</Form.Label>
+                                </div>
+                                <div className="col-md-9">
+                                    <Form.Control type="email" placeholder="Enter email" onChange={(e) => {setEmail(e.target.value)}}/>
+                                </div>
+                                <div className="invalid invalid-email">Invalid E-mail. Reinput.</div>
+                            </Form.Group>
+                            <Form.Group className="mb-3 row align-items-center form-div" controlId="formBasicPassword">
+                                <div className="col-md-3 text-label">
+                                    <Form.Label>{ userType } Password</Form.Label>
+                                </div>
+                                <div className="col-md-9">
+                                    <Form.Control type="password" placeholder="Password" onChange={(e) => {setPassword(e.target.value)}}/>
+                                </div>
+                                <div className="invalid invalid-password">Invalid Password. Reinput.</div>
+                            </Form.Group>
+                            <Row className="justify-content-center">
+                                <Form.Group className="mb-3 col-md-3 check-label" controlId="formBasicCheckbox">
+                                    <Form.Check type="checkbox" label="Performer" onChange={(e) => {
+                                        if(userType == "User")
+                                            setUserType("Performer")
+                                        else
+                                            setUserType("User")
+                                    }} />
+                                </Form.Group>
+                                <Form.Group className="mb-3 col-md-3 check-label" controlId="formBasicCheckbox">
+                                    <Form.Check type="checkbox" label="Save Password" />
+                                </Form.Group>
+                            </Row>
+                            <Button variant="primary" className="login-button" onClick={ loginHandler }> Login </Button>
+                        </Form>
+                    </Col>
+                </Row>
+            </Container>
         </div>
     )
 }
