@@ -6,8 +6,18 @@ function LogIn () {
     const [userType, setUserType] = useState("User")
     const [email, setEmail] = useState("")
     const [password, setPassword] = useState("")
+    const [eHide, setEHide] = useState("none")
+    const [pHide, setPHide] = useState("none")
     
     const loginHandler = () => {
+        if(email == "" || email.search("@") < 0)
+            setEHide("block")
+        if(password == "")
+            setPHide("block")
+        if(eHide == "block" || pHide == "block")
+            return;
+        if(email != "admin@email.com" || password != "admin")
+            return;
         
     }
     return (
@@ -25,7 +35,7 @@ function LogIn () {
                                 <div className="col-md-9">
                                     <Form.Control type="email" placeholder="Enter email" onChange={(e) => {setEmail(e.target.value)}}/>
                                 </div>
-                                <div className="invalid invalid-email">Invalid E-mail. Reinput.</div>
+                                <div className="invalid invalid-email" style={{display:eHide}}>Invalid E-mail. Reinput.</div>
                             </Form.Group>
                             <Form.Group className="mb-3 row align-items-center form-div" controlId="formBasicPassword">
                                 <div className="col-md-3 text-label">
@@ -34,7 +44,7 @@ function LogIn () {
                                 <div className="col-md-9">
                                     <Form.Control type="password" placeholder="Password" onChange={(e) => {setPassword(e.target.value)}}/>
                                 </div>
-                                <div className="invalid invalid-password">Invalid Password. Reinput.</div>
+                                <div className="invalid invalid-password" style={{display:pHide}}>Invalid Password. Reinput.</div>
                             </Form.Group>
                             <Row className="justify-content-center">
                                 <Form.Group className="mb-3 col-md-3 check-label" controlId="formBasicCheckbox">

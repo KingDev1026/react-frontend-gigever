@@ -25,7 +25,8 @@ function Header() {
 
                             <Link to="/login" className='n-link en-link nav-link'>Log In</Link>
                             {/* <Nav.Link className='n-link en-link' href="">Log In</Nav.Link> */}
-                            <Nav.Link className='n-link re-link' href="">Register</Nav.Link>
+                            {/* <Nav.Link className='n-link re-link' href="">Register</Nav.Link> */}
+                            <Link to="/register" className='n-link re-link nav-link'>Register</Link>
                         </Nav>
                     </Navbar.Collapse>
                 </Container>

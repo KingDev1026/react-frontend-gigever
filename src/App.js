@@ -13,6 +13,7 @@ import ProDescription from "./components/prodescription/ProDescription";
 import ProBewer from "./components/probewer/ProBewer";
 import ResultBody from "./components/resultbody/ResultBody";
 import LogIn from "./components/login/LogIn";
+import Register from "./components/register/Register";
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -74,7 +75,15 @@ const Login = () => {
     </div>
   )
 }
-
+const RegisterForm = () => {
+  return(
+    <div className="App">
+        <Header />
+        <Register />
+        <Footer />
+    </div>
+  )
+}
 function App() {
   const [pageState, setPageState] = useState(0);
   return (
@@ -83,6 +92,7 @@ function App() {
             <Route index element={<Home/>} />
             <Route path='login' element={<Login/>}/>
             <Route path='profile' element={<Profile />}/>
+            <Route path='register' element={<RegisterForm />}/>
        </Routes>
       </BrowserRouter>
   )
