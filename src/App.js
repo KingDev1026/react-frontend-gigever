@@ -11,9 +11,8 @@ import ProfileSlider from "./components/profileslider/ProfileSlider";
 import Request from "./components/request/Request";
 import ProDescription from "./components/prodescription/ProDescription";
 import ProBewer from "./components/probewer/ProBewer";
-import ResultSearch from "./components/resultsearch/ResultSearch";
 import ResultBody from "./components/resultbody/ResultBody";
-import {Translator, Translate} from 'react-auto-translate';
+import LogIn from "./components/login/LogIn";
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -66,6 +65,14 @@ const Profile = () => {
     </div>
   )
 }
+const Login = () => {
+  return (
+    <div className="App">
+        <Header />
+        <LogIn />
+    </div>
+  )
+}
 
 function App() {
   const [pageState, setPageState] = useState(0);
@@ -73,7 +80,7 @@ function App() {
       <BrowserRouter>
         <Routes>
             <Route index element={<Home/>} />
-            <Route path='login' element={<GeResult/>}/>
+            <Route path='login' element={<Login/>}/>
             <Route path='profile' element={<Profile />}/>
        </Routes>
       </BrowserRouter>
