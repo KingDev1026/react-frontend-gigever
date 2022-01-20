@@ -1,0 +1,15 @@
+.Register {
+    font-family: 'Inter', sans-serif;
+    background-color: white;
+    padding: 50px;
+}
+.Register .form-label {
+    color: black;
+    font-size: 13pt;
+    text-align: right;
+}
+.Register .form-check {
+    padding: 10px;
+    margin-left: 10px;
+    font-size: 12pt;
+}

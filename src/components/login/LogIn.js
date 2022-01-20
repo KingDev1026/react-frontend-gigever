@@ -18,7 +18,10 @@ function LogIn () {
             return;
         if(email != "admin@email.com" || password != "admin")
             return;
-        
+        if(userType == "User")
+            alert("User")
+        else
+            alert("performer")
     }
     return (
         <div className="LogIn">
@@ -47,7 +50,7 @@ function LogIn () {
                                 <div className="invalid invalid-password" style={{display:pHide}}>Invalid Password. Reinput.</div>
                             </Form.Group>
                             <Row className="justify-content-center">
-                                <Form.Group className="mb-3 col-md-3 check-label" controlId="formBasicCheckbox">
+                                <Form.Group className="mb-3 col-md-3 check-label" controlId="fromCheckUser">
                                     <Form.Check type="checkbox" label="Performer" onChange={(e) => {
                                         if(userType == "User")
                                             setUserType("Performer")
@@ -55,7 +58,7 @@ function LogIn () {
                                             setUserType("User")
                                     }} />
                                 </Form.Group>
-                                <Form.Group className="mb-3 col-md-3 check-label" controlId="formBasicCheckbox">
+                                <Form.Group className="mb-3 col-md-3 check-label" controlId="fromCheckSave">
                                     <Form.Check type="checkbox" label="Save Password" />
                                 </Form.Group>
                             </Row>
