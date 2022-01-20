@@ -14,6 +14,7 @@ import ProBewer from "./components/probewer/ProBewer";
 import ResultBody from "./components/resultbody/ResultBody";
 import LogIn from "./components/login/LogIn";
 import Register from "./components/register/Register";
+import PerDashBody from "./components/perdashbody/PerDashBody";
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
@@ -84,6 +85,15 @@ const RegisterForm = () => {
     </div>
   )
 }
+const PerDashboard = () => {
+  return(
+    <div className="App">
+        <Header />
+        <PerDashBody />
+        <Footer />
+    </div>
+  )
+}
 function App() {
   const [pageState, setPageState] = useState(0);
   return (
@@ -93,6 +103,8 @@ function App() {
             <Route path='login' element={<Login/>}/>
             <Route path='profile' element={<Profile />}/>
             <Route path='register' element={<RegisterForm />}/>
+            <Route path='geresult' element={<GeResult />}/>
+            <Route path='perDashboard' element={<PerDashboard />}/>
        </Routes>
       </BrowserRouter>
   )

@@ -138,7 +138,7 @@ function Register () {
                         <Form.Group controlId="formGridApply">
                             <Row>
                                 <Form.Label column sm={3} className="label-text">
-                                    Apply as:
+                                    Register as:
                                 </Form.Label>
                                 <div key={`inline-radio`} className="col-sm-9 d-flex justify-content-left align-items-center" >
                                     <Form.Check inline label="User" name="userType" type="radio" id={`inline-radio-0`} onChange={(e) => {radioChangeHandle(0)}} defaultChecked/>

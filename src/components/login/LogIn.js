@@ -1,5 +1,6 @@
 import React, { useState, useRef } from "react";
 import './LogIn.css';
+import { useNavigate } from "react-router-dom";
 import { Container, Form, Button, Row, Col } from "react-bootstrap";
 
 function LogIn () {
@@ -8,7 +9,7 @@ function LogIn () {
     const [password, setPassword] = useState("")
     const [eHide, setEHide] = useState("none")
     const [pHide, setPHide] = useState("none")
-    
+    const navigate = useNavigate();
     const loginHandler = () => {
         if(email == "" || email.search("@") < 0)
             setEHide("block")
@@ -18,10 +19,10 @@ function LogIn () {
             return;
         if(email != "admin@email.com" || password != "admin")
             return;
-        if(userType == "User")
-            alert("User")
-        else
-            alert("performer")
+        let path = '/geresult'
+        if(userType != "User")
+            path = '/perDashboard'
+        navigate(path)
     }
     return (
         <div className="LogIn">

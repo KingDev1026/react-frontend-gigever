@@ -2,6 +2,7 @@
     font-family: 'Inter', sans-serif;
     background-color: white;
     padding: 50px;
+    height: 70vh;
 }
 .Register .form-label {
     color: black;
